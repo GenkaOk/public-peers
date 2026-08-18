@@ -12,6 +12,8 @@ Yggdrasil configuration file to peer with these nodes.
   * `quic://ip4.nerdvm.mywire.org:443?key=00000000c61d731961a290d127cd3fc03a4c5f3f35b9083559d4c81d48d65854`
   * `tcp://ip6.nerdvm.mywire.org:8080?key=00000000c61d731961a290d127cd3fc03a4c5f3f35b9083559d4c81d48d65854`
   * `quic://ip6.nerdvm.mywire.org:443?key=00000000c61d731961a290d127cd3fc03a4c5f3f35b9083559d4c81d48d65854`
+* Fremont, operated by [WCIIT](https://worker.informatics.coop/). Rejects peers with high-latency except from Asia and South America.
+  * `tls://ca.us.ygg.informatics.coop:443?key=0000000023fc6ffb62afb79448aefb0943df2e4472cf08bd489f5407378300a2`
 
 ### Maryland
 
@@ -109,6 +111,9 @@ Yggdrasil configuration file to peer with these nodes.
   * `tls://ygg-atvps.axxa.dev:18080`
   * `quic://ygg-atvps.axxa.dev:18083`
 
+* Lynnwood, WA, operated by [Ed Asriyan](https://asriyan.me)
+  * `tcp://ygg1.asriyan.me:23672`
+
 * Liberty Lake, WA operated by [jeff](https://github.com/majestrate).
   * `tls://23.184.48.86:1443`
   * `tls://[2602:fc24:18:7a42::1]:1443`
@@ -142,3 +147,6 @@ Yggdrasil configuration file to peer with these nodes.
 * Council Bluffs, IA, axxa.dev, operated by [Adalbert Alexandru](https://axxa.dev)
   * `tls://ygg-google.axxa.dev:18080`
   * `quic://ygg-google.axxa.dev:18083`
+### Other
+* Dedicated server
+* `tls://192.3.13.16:8118`
