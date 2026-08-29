@@ -113,8 +113,6 @@ mena,saudi-arabia,quic://ryd-peer.ygg.sy.sa:8443
 other,lokinet,tcp://jeff.loki:5000
 other,lokinet,tcp://yes.loki:5000
 other,lokinet,tcp://chiefsnapp.loki:42753
-europe,spain,quic://spain.magicum.net:36900
-europe,spain,tls://spain.magicum.net:36901
 europe,spain,tcp://rendezvous.anton.molyboha.me:50421
 europe,russia,tcp://ygg-msk-1.averyan.ru:8363
 europe,russia,tls://ygg-msk-1.averyan.ru:8362

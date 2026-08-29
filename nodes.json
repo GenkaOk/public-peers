@@ -153,8 +153,6 @@
     },
     "europe": {
         "spain": [
-            "quic://spain.magicum.net:36900",
-            "tls://spain.magicum.net:36901",
             "tcp://rendezvous.anton.molyboha.me:50421"
         ],
         "russia": [
