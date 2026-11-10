@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -24,13 +24,14 @@ jobs:
 
       - name: Run parser
         run: |
-          python parser.py
+          python .github/peers-preview/parser.py
 
-      - name: Commit and push results
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Action"
-          git add nodes.json
-          git add nodes.csv
-          git commit -m "Add parsed nodes.json, nodes.csv"
-          git push
+      - name: Upload parsed files
+        uses: actions/upload-artifact@v4
+        with:
+          name: parsed-nodes
+          path: |
+            nodes.json
+            nodes.csv
+          if-no-files-found: error
+          retention-days: 30

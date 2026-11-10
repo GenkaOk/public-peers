@@ -58,3 +58,6 @@ Yggdrasil supports basic authentication for SOCKS5 using credentials in the URI 
 - Same-peer link priority: `?priority=[integer]` (default is 0, maximum 254 for lowest priority)
 - Password authentication (v0.5.0+): `?password=[string]` (length up to 64 characters)
 - Maximum back-off time (v0.5.5+): `?maxbackoff=[seconds]` (supports duration values like 5m, 1h etc)
+
+> [!NOTE]
+You can access a ready-made list of all public peers in the <a href="https://github.com/yggdrasil-network/public-peers/actions/workflows/parser.yml">Actions</a> section
